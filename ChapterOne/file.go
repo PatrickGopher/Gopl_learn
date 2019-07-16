@@ -1,4 +1,4 @@
-package main
+package ChapterOne
 
 import (
 	"bufio"
@@ -61,9 +61,3 @@ func readFileLine(path string) {
 	}
 }
 
-func main() {
-	path := "./demo.txt"
-	writeFile(path)
-	readFile(path)
-	readFileLine(path)
-}

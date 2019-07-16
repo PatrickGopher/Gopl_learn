@@ -1,4 +1,4 @@
-package main
+package ChapterOne
 
 import (
 	"image"
@@ -8,15 +8,16 @@ import (
 	"math"
 	"math/rand"
 )
-var palette = []color.Color{color.White, color.Black}
-const (
-	whiteIndex = 0 // first color in palette
-	blackIndex = 1 // next color in palette
-)
+
 //func main() {
 //	lissajous(os.Stdout)
 //}
-func lissajous(out io.Writer) {
+func lissajous1(out io.Writer) {
+	var palette = []color.Color{color.White, color.Black}
+	const (
+		whiteIndex = 0 // first color in palette
+		blackIndex = 1 // next color in palette
+	)
 	const (
 		cycles = 5 // number of complete x oscillator revolutions
 		res = 0.001 // angular resolution

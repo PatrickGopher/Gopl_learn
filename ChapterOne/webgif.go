@@ -1,9 +1,5 @@
-package main
+package ChapterOne
 
-//基础类型：数字、字符、布尔
-//复合类型：数组、结构体
-//引用类型：指针、切片、字典、函数、通道
-//接口类型
 import (
 	"image"
 	"image/color"

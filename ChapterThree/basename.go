@@ -1,4 +1,5 @@
-package main
+//获取文件名，如a/b.go=>b
+package ChapterThree
 
 import (
 	"fmt"

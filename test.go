@@ -4,21 +4,28 @@ import (
 	"fmt"
 )
 
+//基础类型：数字、字符、布尔
+//复合类型：数组、结构体
+//引用类型：指针、切片、字典、函数、通道
+//接口类型
+
 func main() {
+	//new返回指针
 	p := new(int)
 	fmt.Println(*p)
 	*p = 5
 	fmt.Println(*p)
-	//fmt.Println(gcd(6, 8)
+	//最大公倍数
+	fmt.Println(gcd(6, 8))
+	//科学计数法
 	a := 1e2
 	fmt.Println(int(a))
 
+	//六进制
 	o := 0666
 	fmt.Printf("%d %[1]o %#[1]o\n", o)
 
-	fmt.Println(HasPrefix("aaab", "aaa"))
-	fmt.Println(Contains("aaabsd", "abs"))
-
+	//处理中文字符串rune
 	str := "Hello,世界"
 	fmt.Println(str)
 	fmt.Printf("% x\n", str)
@@ -28,24 +35,12 @@ func main() {
 	for i, r := range str {
 		fmt.Printf("%d\t%q\t%d\t\n", i, r, r)
 	}
-	fmt.Printf("%q",str)
+	fmt.Printf("%q", str)
 }
 
-//func gcd(x int, y int) int {
-//	for y != 0 {
-//		x, y = y, x%y
-//	}
-//	return x
-//}
-func Contains(s, substr string) bool {
-	for i := 0; i < len(s); i++ {
-		if HasPrefix(s[i:], substr) {
-			return true
-		}
+func gcd(x int, y int) int {
+	for y != 0 {
+		x, y = y, x%y
 	}
-	return false
-}
-
-func HasPrefix(s, prefix string) bool {
-	return len(s) >= len(prefix) && s[:len(prefix)] == prefix
+	return x
 }
