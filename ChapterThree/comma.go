@@ -3,17 +3,15 @@ package ChapterThree
 
 import (
 	"bytes"
-	"fmt"
-	"strconv"
 	"strings"
 )
 
-func main() {
-	num := +12232131
-	fmt.Printf("%s\n", comma(strconv.Itoa(num)))
-	fmt.Printf("%s\n", comma1(strconv.Itoa(num)))
-	fmt.Printf("%s\n", comma2(strconv.Itoa(num)))
-}
+//func main() {
+//	num := +12232131
+//	fmt.Printf("%s\n", comma(strconv.Itoa(num)))
+//	fmt.Printf("%s\n", comma1(strconv.Itoa(num)))
+//	fmt.Printf("%s\n", comma2(strconv.Itoa(num)))
+//}
 
 func comma2(s string) string {
 	var buffer bytes.Buffer

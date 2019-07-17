@@ -1,6 +1,6 @@
 package ChapterThree
 
-func isReverse(a, b string) bool {
+func IsReverse(a, b string) bool {
 	if len(a) != len(b) {
 		return false
 	}
@@ -12,7 +12,7 @@ func isReverse(a, b string) bool {
 		m[v]++
 	}
 	for _, v := range b {
-		m[v]++
+		n[v]++
 	}
 	for i, v := range m {
 		if n[i] != v {

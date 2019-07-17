@@ -1,6 +1,7 @@
 package main
 
 import (
+	"./ChapterThree"
 	"fmt"
 )
 
@@ -10,6 +11,7 @@ import (
 //接口类型
 
 func main() {
+	fmt.Println(ChapterThree.IsReverse("aavcx", "xcava"))
 	//new返回指针
 	p := new(int)
 	fmt.Println(*p)
