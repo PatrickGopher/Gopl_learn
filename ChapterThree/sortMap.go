@@ -6,7 +6,7 @@ import (
 )
 
 func SortMap(m map[string]int) {
-	var temp []string
+	temp := make([]string, 0, len(m))
 	for key := range m {
 		temp = append(temp, key)
 	}
